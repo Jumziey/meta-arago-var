@@ -24,6 +24,7 @@ UTILS = " \
 
 UTILS_UBOOT_FW = "u-boot-fw-utils"
 UTILS_UBOOT_FW_keystone = ""
+UTILS_UBOOT_FW_varsomam33 = ""
 
 UTILS_append_ti33x = " mmc-utils"
 UTILS_append_ti43x = " mmc-utils"
