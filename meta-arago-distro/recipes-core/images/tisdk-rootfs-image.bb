@@ -12,6 +12,9 @@ IMAGE_INSTALL += "\
     packagegroup-arago-tisdk-matrix \
     packagegroup-arago-tisdk-multimedia \
     packagegroup-arago-tisdk-amsdk \
+    minicom \
+    ethtool \
+    i2c-tools \
 "
 
 export IMAGE_BASENAME = "tisdk-rootfs-image"
