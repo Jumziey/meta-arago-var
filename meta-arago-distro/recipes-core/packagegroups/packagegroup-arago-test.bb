@@ -30,7 +30,6 @@ ARAGO_TEST = "\
     "
 
 ARAGO_TI_TEST = "\
-    ltp-ddt \
     input-utils \
     cpuloadgen \
     "
@@ -38,6 +37,11 @@ ARAGO_TI_TEST = "\
 ARAGO_TI_TEST_append_ti33x = " \
     omapconf \
     "
+
+ARAGO_TI_TEST_append_varsomam33 = " \
+    omapconf \
+    "
+
 
 ARAGO_TI_TEST_append_ti43x = " \
     omapconf \
