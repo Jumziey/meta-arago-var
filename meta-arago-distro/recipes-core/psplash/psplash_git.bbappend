@@ -14,8 +14,7 @@ SRCREV = "de9979aefbc56af59b4d236a4b63dd19dcdcfb53"
 # includes this patch.
 SRC_URI := "${@oe_filter_out('file://psplash_fix_bad_arg_segfault.patch','${SRC_URI}', d)}"
 
-SRC_URI += "
-            file://psplash-poky-img.h                       \
+SRC_URI += "file://psplash-poky-img.h                       \
             file://psplash-bar-img.h                        \
 "
 
