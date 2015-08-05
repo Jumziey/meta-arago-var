@@ -14,11 +14,9 @@ SRCREV = "de9979aefbc56af59b4d236a4b63dd19dcdcfb53"
 # includes this patch.
 SRC_URI := "${@oe_filter_out('file://psplash_fix_bad_arg_segfault.patch','${SRC_URI}', d)}"
 
-SRC_URI += "file://psplash-18bpp.patch                      \
-            file://0003-Updated-configurability.patch.patch \
+SRC_URI += "
             file://psplash-poky-img.h                       \
             file://psplash-bar-img.h                        \
-            file://0001-psplash-Add-Arago-custom-color.patch\
 "
 
 do_configure_prepend() {
