@@ -33,6 +33,7 @@ WLAN_COMMON = "\
 
 FIRMWARE_AND_DRIVERS = "\
     ti-compat-wireless-wl18xx \
+    wl12xx-firmware-ti \
     wl18xx-firmware \
 "
 
