@@ -8,7 +8,9 @@ PR = "r3"
 
 # Tag: R8.5
 SRCREV = "dcf0800f30ba449cd7f3a20f8b3f4853dc829652"
-SRC_URI = "git://git.ti.com/wilink8-wlan/18xx-ti-utils.git"
+SRC_URI = "git://git.ti.com/wilink8-wlan/18xx-ti-utils.git\
+           file://configure-device.sh\
+    "
 
 S = "${WORKDIR}/git/wlconf"
 
@@ -32,6 +34,7 @@ do_install() {
 	install -m 0755 configure-device.sh ${D}${bindir}/wlconf/
 	install -m 0755 ${S}/official_inis/* \
 			${D}${bindir}/wlconf/official_inis/
+	install -m 0755 ${WORKDIR}/configure-device.sh ${D}${bindir}/wlconf/
 }
 
 FILES_${PN} += " \
