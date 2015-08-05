@@ -5,7 +5,7 @@ SECTION = "multimedia"
 LIC_FILES_CHKSUM = "file://Multimedia_Data_Files_Manifest.doc;md5=da0727f80b90422138535dfffc36cd1a"
 PR = "r0"
 
-COMPATIBLE_MACHINE = "(omap3|ti33x|ti43x|omap-a15)"
+COMPATIBLE_MACHINE = "(omap3|ti33x|ti43x|omap-a15|varsomam33|varsomam43)"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 VIDEO_FILES = "video_480p "
@@ -20,6 +20,9 @@ VIDEO_FILES_append_dra7xx      = "video_wvga \
                                   video_1080p \
                                   video_720p \
                                   video_yuv"
+
+VIDEO_FILES_append_varsomam33 = "video_wvga"
+VIDEO_FILES_append_varsomam43 = "video_wvga"
 
 SRC_URI = "https://gforge.ti.com/gf/download/frsrelease/1279/7769/amsdk-av-files_${PV}.tar.gz;name=avfilestarball"
 
